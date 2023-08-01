@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    outline: none;
+    background-color: black;
+    color: white;
+    
+}
+::placeholder{
+    color:black;
+}
+.container{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+}
+
+.calculator{
+    background-color: black;
+    padding: 15px;
+    border-radius: 30px;
+    box-shadow: inset 10px 10px 20px #0c93d1,
+                     10px 10px 20px rgb(44, 171, 230);
+    display: grid;
+    grid-template-columns: repeat(4,60px);
+}
+input{
+    color: black;
+    grid-column: span 4;
+    height: 60px;
+    width: 240px;
+    background-color: #0c93d1;
+    box-shadow: inset -5px -5px 12px white,
+                        5px 5px 12px rgba(0, 0, 0,.16);
+    border: none;
+    border-radius: 40px;
+    text-align: end;
+    font-size: 30px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding: 20px; 
+} 
+button{
+    height: 50px;
+    width: 50px;
+    background-color: #0c93d1;
+    box-shadow: inset -5px -5px 12px white,
+                        5px 5px 12px rgba(0, 0, 0,.16);
+     border: none;
+    margin: 8px;
+   font-size: 16px;
+    border-radius: 50%;
+} 
+ .equalsign{
+    width: 105px;
+    border-radius: 50%;
+    background-color: #0c93d1;
+    box-shadow: inset -5px -5px 12px white,
+                        5px 5px 12px rgba(0, 0, 0,.16);
+}
+
+.interact1{
+    margin-top: 30px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.interact{
+    color: #0c93d1;
+    font-size: 4em;
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 10px 10px 7px rgb(32, 124, 164);
+}
+.scroll{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+} 
+@-webkit-keyframes glide  {
+    from {
+       left:0px;
+       top:0px;
+    }
+    
+    to {
+       left:0px;
+       top:30px;
+    }
+ 
+ }
+body img{
+    display: block;
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 50%;
+    width: 300px ;
+    height: 450px;
+    position:relative;
+   -webkit-animation:glide 1s ease-in-out alternate infinite;
+}
+@media(max-width:500px){
+    .interact{
+        padding-left: 30px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .interact1{
+        padding-left: 30px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    body img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+ }
